@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				instagram: {
+					pink: '#E1306C',
+					purple: '#8134AF',
+					orange: '#F56040',
+					yellow: '#FCCC63'
+				},
+				brand: {
+					blue: '#1E40AF',
+					green: '#059669',
+					gray: '#6B7280'
 				}
+			},
+			backgroundImage: {
+				'instagram-gradient': 'linear-gradient(45deg, #F56040 0%, #E1306C 50%, #8134AF 100%)',
+				'hero-gradient': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+				'card-gradient': 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +104,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.9)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'scale-in': 'scale-in 0.3s ease-out'
 			}
 		}
 	},
