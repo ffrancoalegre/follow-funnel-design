@@ -1,8 +1,16 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Instagram, Menu } from "lucide-react";
+import PurchaseModal from "./PurchaseModal";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleComenzarAhoraClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -31,7 +39,7 @@ const Header = () => {
             <a href="#faq" className="text-gray-600 hover:text-instagram-pink transition-colors">
               FAQ
             </a>
-            <Button className="btn-instagram">
+            <Button className="btn-instagram" onClick={handleComenzarAhoraClick}>
               Comenzar Ahora
             </Button>
           </nav>
@@ -41,6 +49,14 @@ const Header = () => {
           </button>
         </div>
       </div>
+
+      <PurchaseModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        planName="Starter"
+        planFollowers="1,000"
+        planPrice="$9.99"
+      />
     </header>
   );
 };

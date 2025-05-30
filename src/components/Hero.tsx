@@ -1,8 +1,23 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Shield, Zap, Users } from "lucide-react";
+import PurchaseModal from "./PurchaseModal";
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleVerPaquetesClick = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleComenzarAhoraClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <section className="bg-hero-gradient min-h-screen flex items-center py-20">
       <div className="container mx-auto px-4">
@@ -20,11 +35,20 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="btn-instagram text-lg px-8 py-4">
+            <Button 
+              size="lg" 
+              className="btn-instagram text-lg px-8 py-4"
+              onClick={handleVerPaquetesClick}
+            >
               Ver Paquetes
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
-              Conocer Más
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-white/20 border-white/30 text-white hover:bg-white/30"
+              onClick={handleComenzarAhoraClick}
+            >
+              Comenzar Ahora
             </Button>
           </div>
           
@@ -55,6 +79,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      <PurchaseModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        planName="Starter"
+        planFollowers="1,000"
+        planPrice="$9.99"
+      />
     </section>
   );
 };

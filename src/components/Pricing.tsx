@@ -1,9 +1,18 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
+import PurchaseModal from "./PurchaseModal";
 
 const Pricing = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<{
+    name: string;
+    followers: string;
+    price: string;
+  } | null>(null);
+
   const plans = [
     {
       name: "Starter",
@@ -47,6 +56,15 @@ const Pricing = () => {
       popular: false
     }
   ];
+
+  const handlePurchaseClick = (plan: typeof plans[0]) => {
+    setSelectedPlan({
+      name: plan.name,
+      followers: plan.followers,
+      price: plan.price
+    });
+    setIsModalOpen(true);
+  };
 
   return (
     <section id="pricing" className="py-20 bg-gray-50">
@@ -104,6 +122,7 @@ const Pricing = () => {
                 </ul>
                 
                 <Button 
+                  onClick={() => handlePurchaseClick(plan)}
                   className={`w-full ${
                     plan.popular ? 'btn-instagram' : 'bg-gray-800 hover:bg-gray-900'
                   }`}
@@ -116,6 +135,16 @@ const Pricing = () => {
           ))}
         </div>
       </div>
+
+      {selectedPlan && (
+        <PurchaseModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          planName={selectedPlan.name}
+          planFollowers={selectedPlan.followers}
+          planPrice={selectedPlan.price}
+        />
+      )}
     </section>
   );
 };
