@@ -8,18 +8,29 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-instagram-gradient rounded-full flex items-center justify-center">
+              <a 
+                href="https://www.instagram.com/seguidoresargy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-instagram-gradient rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+              >
                 <Instagram className="w-6 h-6 text-white" />
-              </div>
+              </a>
               <span className="text-2xl font-bold bg-instagram-gradient bg-clip-text text-transparent">
-                InstaBoost
+                Seguidores Argy
               </span>
             </div>
             <p className="text-gray-400 mb-4">
               El servicio más confiable para hacer crecer tu presencia en Instagram de forma segura y efectiva.
             </p>
             <div className="flex space-x-4">
-              <Instagram className="w-6 h-6 text-gray-400 hover:text-instagram-pink cursor-pointer transition-colors" />
+              <a 
+                href="https://www.instagram.com/seguidoresargy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram className="w-6 h-6 text-gray-400 hover:text-instagram-pink cursor-pointer transition-colors" />
+              </a>
               <Twitter className="w-6 h-6 text-gray-400 hover:text-blue-400 cursor-pointer transition-colors" />
               <Facebook className="w-6 h-6 text-gray-400 hover:text-blue-600 cursor-pointer transition-colors" />
               <Mail className="w-6 h-6 text-gray-400 hover:text-green-400 cursor-pointer transition-colors" />
@@ -58,7 +69,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 InstaBoost. Todos los derechos reservados.</p>
+          <p>&copy; 2024 Seguidores Argy. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

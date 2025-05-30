@@ -16,7 +16,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-            Compra seguidores reales y de calidad. Entrega inmediata, 100% seguro y con garantía de por vida.
+            Compra seguidores de calidad y de alta calidad. Entrega inmediata, 100% seguro y con garantía de por vida.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -49,7 +49,7 @@ const Hero = () => {
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4">
                 <Users className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Seguidores Reales</h3>
+              <h3 className="text-xl font-semibold mb-2">Seguidores de Calidad</h3>
               <p className="opacity-80">Perfiles auténticos y activos</p>
             </div>
           </div>

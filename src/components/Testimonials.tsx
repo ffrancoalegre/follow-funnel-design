@@ -7,14 +7,14 @@ const Testimonials = () => {
     {
       name: "María González",
       username: "@maria_lifestyle",
-      comment: "Increíble servicio! Mis seguidores llegaron en menos de 3 minutos y todos son perfiles reales. Mi engagement aumentó un 300%.",
+      comment: "Increíble servicio! Mis seguidores llegaron en menos de 3 minutos y todos son perfiles de calidad. Mi engagement aumentó un 300%.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b302?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Carlos Ruiz",
       username: "@carlos_fitness",
-      comment: "Probé varios servicios antes, pero InstaBoost es el único que realmente cumple. Seguidores de calidad y soporte excelente.",
+      comment: "Probé varios servicios antes, pero Seguidores Argy es el único que realmente cumple. Seguidores de calidad y soporte excelente.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },

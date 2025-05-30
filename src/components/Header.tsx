@@ -8,11 +8,16 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-instagram-gradient rounded-full flex items-center justify-center">
+            <a 
+              href="https://www.instagram.com/seguidoresargy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-instagram-gradient rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+            >
               <Instagram className="w-6 h-6 text-white" />
-            </div>
+            </a>
             <span className="text-2xl font-bold bg-instagram-gradient bg-clip-text text-transparent">
-              InstaBoost
+              Seguidores Argy
             </span>
           </div>
           

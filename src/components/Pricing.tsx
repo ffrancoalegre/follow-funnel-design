@@ -10,7 +10,7 @@ const Pricing = () => {
       followers: "1,000",
       price: "$9.99",
       features: [
-        "1,000 seguidores reales",
+        "1,000 seguidores de calidad",
         "Entrega en 5 minutos",
         "Sin caída garantizada",
         "Soporte 24/7"
@@ -23,7 +23,7 @@ const Pricing = () => {
       price: "$29.99",
       originalPrice: "$49.99",
       features: [
-        "5,000 seguidores reales",
+        "5,000 seguidores de calidad",
         "Entrega en 3 minutos",
         "Sin caída garantizada",
         "Soporte prioritario",
@@ -37,7 +37,7 @@ const Pricing = () => {
       price: "$49.99",
       originalPrice: "$99.99",
       features: [
-        "10,000 seguidores reales",
+        "10,000 seguidores de calidad",
         "Entrega instantánea",
         "Sin caída garantizada",
         "Soporte VIP",

@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -17,8 +16,8 @@ const FAQ = () => {
       answer: "La entrega comienza inmediatamente después del pago y se completa en 3-5 minutos para la mayoría de paquetes. Los paquetes premium se entregan instantáneamente."
     },
     {
-      question: "¿Los seguidores son reales?",
-      answer: "Sí, todos nuestros seguidores son perfiles reales y activos. No utilizamos bots ni cuentas falsas que puedan dañar tu cuenta."
+      question: "¿Los seguidores son de calidad?",
+      answer: "Sí, todos nuestros seguidores son perfiles de calidad y activos. No utilizamos bots ni cuentas falsas que puedan dañar tu cuenta."
     },
     {
       question: "¿Qué pasa si pierdo seguidores?",
